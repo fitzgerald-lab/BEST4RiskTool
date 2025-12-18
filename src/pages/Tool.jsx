@@ -409,12 +409,16 @@ const sections = [
   },
   {
     title: "Capsule Sponge Biomarkers",
-    subtitle: "Please enter results if a capsule sponge test has been completed",
+    subtitle: (
+      <>
+      Please enter results if a capsule sponge test has been completed. Please use results from the <span className="font-bold">Columnar Cells</span> section.
+      </>
+    ),
     questions: [
       {
         id: 7,
         type: "multi",
-        text: "Atypia",
+        text: "Columnar Atypia",
         subtext: "",
         options: [
           "Negative",
@@ -425,7 +429,7 @@ const sections = [
       {
         id: 8,
         type: "multi",
-        text: "p53",
+        text: "Columnar p53",
         subtext: "",
         options: ["Negative", "Equivocal", "Positive"],
       },
